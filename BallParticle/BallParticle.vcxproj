@@ -22,7 +22,7 @@
     <ProjectGuid>{8907A695-9E6D-4637-AD98-7251BC2344AC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>BallParticle</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
