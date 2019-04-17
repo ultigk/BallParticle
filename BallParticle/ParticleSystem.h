@@ -35,7 +35,7 @@ public:
 
     void Push(const sf::Vector2f delta_velocity);
     void Update(const float dt);
-    void Render(sf::RenderWindow& window);
+    void Render(sf::RenderWindow& window); //прототип скопировал из аналогичной функции класса Particle
     
 private:
     std::vector<Particle> particles_;   

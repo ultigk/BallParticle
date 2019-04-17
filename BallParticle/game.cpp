@@ -4,19 +4,19 @@
 extern const sf::Vector2u WINDOW_SIZES(800, 600);
 
 Game::Game()
-    : main_window_("Several ballz", WINDOW_SIZES)
+    : main_window_("Several ballz", WINDOW_SIZES) // больше не передаем в Game-конструктор particle_ с заданными коор-ами
 {
-    particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 2.0f, WINDOW_SIZES.y / 2.0f),
+    const auto particle1_id = particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 2.0f, WINDOW_SIZES.y / 2.0f),
         sf::Vector2f(0, 0),
         sf::Vector2f(0, 10.0f),
         25.0f);
 
-    particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 3.0f, WINDOW_SIZES.y / 3.0f),
+    const auto particle2_id = particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 3.0f, WINDOW_SIZES.y / 3.0f),
         sf::Vector2f(0, 0),
         sf::Vector2f(0, 10.0f),
         50.0f);
   
-    particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 4.0f, WINDOW_SIZES.y / 4.0f),
+    const auto particle3_id = particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 4.0f, WINDOW_SIZES.y / 4.0f),
         sf::Vector2f(0, 0),
         sf::Vector2f(0, 10.0f),
         75.0f);
@@ -86,8 +86,9 @@ void Game::Update(const float dt)
 void Game::Render()
 {
     main_window_.BeginDraw();
-    //main_window_.Draw(particle);
-    particles_.Render(main_window_.GetWindow());
-
+    /*main_window_.Draw(particle);
+    метод Render должен отрисовать несколько частиц
+    particles_ - приватная переменная класса ParticleSystem*/
+    
     main_window_.EndDraw();
 }

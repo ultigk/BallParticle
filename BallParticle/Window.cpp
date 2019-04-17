@@ -2,6 +2,7 @@
 #include "ParticleSystem.h"
 #include <SFML/Graphics.hpp>
 
+//0 изменений, только цвета
 
 Window::Window(const std::string& title, const sf::Vector2u& size)
 {
@@ -93,10 +94,4 @@ void Window::Create()
 void Window::Destroy()
 {
     window_.close();
-}
-
-
-sf::RenderWindow& Window::GetWindow()
-{
-    return window_;
 }

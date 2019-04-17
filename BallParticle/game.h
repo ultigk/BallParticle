@@ -3,6 +3,9 @@
 #include "window.h"
 #include "ParticleSystem.h"
 #include <SFML/Graphics.hpp>
+
+//Particle -> ParticleSystem
+
 class Game
 {
 public:
