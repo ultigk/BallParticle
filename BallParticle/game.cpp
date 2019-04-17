@@ -89,6 +89,6 @@ void Game::Render()
     /*main_window_.Draw(particle);
     метод Render должен отрисовать несколько частиц
     particles_ - приватная переменная класса ParticleSystem*/
-    
+    particles_.Render(window);
     main_window_.EndDraw();
 }
