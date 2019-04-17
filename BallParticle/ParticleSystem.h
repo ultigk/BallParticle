@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 #include <SFML/Graphics.hpp>
 
@@ -35,7 +35,7 @@ public:
 
     void Push(const sf::Vector2f delta_velocity);
     void Update(const float dt);
-    void Render(sf::RenderWindow& window); //прототип скопировал из аналогичной функции класса Particle
+    void Render(sf::RenderWindow& window); //РїСЂРѕС‚РѕС‚РёРї СЃРєРѕРїРёСЂРѕРІР°Р» РёР· Р°РЅР°Р»РѕРіРёС‡РЅРѕР№ С„СѓРЅРєС†РёРё РєР»Р°СЃСЃР° Particle
     
 private:
     std::vector<Particle> particles_;   

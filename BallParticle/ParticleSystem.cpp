@@ -1,10 +1,10 @@
-#include <SFML/Graphics.hpp>
+п»ї#include <SFML/Graphics.hpp>
 #include "window.h"
 #include "ParticleSystem.h"
 
 
 extern const sf::Vector2u WINDOW_SIZES;
-using ParticleID = size_t; //теперь тип можно не писать
+using ParticleID = size_t; //С‚РµРїРµСЂСЊ С‚РёРї РјРѕР¶РЅРѕ РЅРµ РїРёСЃР°С‚СЊ
 
 
 Particle::Particle(const sf::Vector2f position, const sf::Vector2f velocity, 
@@ -33,7 +33,7 @@ void Particle::Update(const float dt)
     position_ += velocity_ * dt;
     velocity_ += acceleration_ * dt;
 
-    //Обработка столкновений, из HandleCollisions:
+    //РћР±СЂР°Р±РѕС‚РєР° СЃС‚РѕР»РєРЅРѕРІРµРЅРёР№, РёР· HandleCollisions:
 
     if (position_.x < radius_)
     {

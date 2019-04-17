@@ -1,10 +1,10 @@
-#include "game.h"
+п»ї#include "game.h"
 #include <SFML/Graphics.hpp>
 
 extern const sf::Vector2u WINDOW_SIZES(800, 600);
 
 Game::Game()
-    : main_window_("Several ballz", WINDOW_SIZES) // больше не передаем в Game-конструктор particle_ с заданными коор-ами
+    : main_window_("Several ballz", WINDOW_SIZES) // Р±РѕР»СЊС€Рµ РЅРµ РїРµСЂРµРґР°РµРј РІ Game-РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ particle_ СЃ Р·Р°РґР°РЅРЅС‹РјРё РєРѕРѕСЂ-Р°РјРё
 {
     const auto particle1_id = particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 2.0f, WINDOW_SIZES.y / 2.0f),
         sf::Vector2f(0, 0),
@@ -87,8 +87,8 @@ void Game::Render()
 {
     main_window_.BeginDraw();
     /*main_window_.Draw(particle);
-    метод Render должен отрисовать несколько частиц
-    particles_ - приватная переменная класса ParticleSystem*/
+    РјРµС‚РѕРґ Render РґРѕР»Р¶РµРЅ РѕС‚СЂРёСЃРѕРІР°С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С‡Р°СЃС‚РёС†
+    particles_ - РїСЂРёРІР°С‚РЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєР»Р°СЃСЃР° ParticleSystem*/
     particles_.Render(window);
     main_window_.EndDraw();
 }

@@ -1,8 +1,8 @@
-#include "window.h"
+п»ї#include "window.h"
 #include "ParticleSystem.h"
 #include <SFML/Graphics.hpp>
 
-//0 изменений, только цвета
+//0 РёР·РјРµРЅРµРЅРёР№, С‚РѕР»СЊРєРѕ С†РІРµС‚Р°
 
 Window::Window(const std::string& title, const sf::Vector2u& size)
 {
