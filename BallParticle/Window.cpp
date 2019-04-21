@@ -2,8 +2,6 @@
 #include "ParticleSystem.h"
 #include <SFML/Graphics.hpp>
 
-//0 изменений, только цвета
-
 Window::Window(const std::string& title, const sf::Vector2u& size)
 {
     is_done_ = false;
@@ -59,6 +57,10 @@ void Window::Draw(sf::Drawable& drawable_object)
 
 void Window::Draw(Particle& particle)
 {
+    /*for (int i = 0; i < particles_.size(); i++)
+    {
+        particles_[i].Draw(window_);
+    }*/
     particle.Render(window_);
 }
 
@@ -94,4 +96,10 @@ void Window::Create()
 void Window::Destroy()
 {
     window_.close();
+}
+
+
+sf::RenderWindow& Window::GetWindow()
+{
+    return window_;
 }

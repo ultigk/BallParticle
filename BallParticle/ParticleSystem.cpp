@@ -83,16 +83,8 @@ ParticleID ParticleSystem::AddParticle(
 
 void ParticleSystem::RemoveParticle(const ParticleID particle_id)
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-        }
-        window.clear();
-        window.display();
-    }
+  
+    particles_.erase(particles_.begin() + particle_id);
 }
 
 

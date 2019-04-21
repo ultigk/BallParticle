@@ -8,6 +8,7 @@
 class Window
 {
 public:
+    sf::RenderWindow& GetWindow();
     Window(const std::string& title, const sf::Vector2u& size);
     virtual ~Window();
 

@@ -2,7 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 
-using ParticleID = size_t;
+
 
 class Particle
 {
@@ -26,6 +26,7 @@ private:
 
 class ParticleSystem
 {
+    using ParticleID = size_t;
 public:
     ParticleSystem() = default;
     virtual ~ParticleSystem() = default;

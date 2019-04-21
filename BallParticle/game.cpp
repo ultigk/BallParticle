@@ -1,4 +1,5 @@
 ﻿#include "game.h"
+#include "window.h"
 #include <SFML/Graphics.hpp>
 
 extern const sf::Vector2u WINDOW_SIZES(800, 600);
@@ -86,9 +87,11 @@ void Game::Update(const float dt)
 void Game::Render()
 {
     main_window_.BeginDraw();
-    /*main_window_.Draw(particle);
+    /*main_window_.Draw(particles_);
     метод Render должен отрисовать несколько частиц
     particles_ - приватная переменная класса ParticleSystem*/
-    particles_.Render(window);
+
+    //particles_.Render(window);
+    particles_.Render(main_window_.GetWindow());
     main_window_.EndDraw();
 }
