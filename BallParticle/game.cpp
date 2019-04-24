@@ -9,17 +9,17 @@ Game::Game()
 {
     const auto particle1_id = particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 2.0f, WINDOW_SIZES.y / 2.0f),
         sf::Vector2f(0, 0),
-        sf::Vector2f(0, 10.0f),
+        sf::Vector2f(0, 200.0f),
         25.0f);
 
     const auto particle2_id = particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 3.0f, WINDOW_SIZES.y / 3.0f),
         sf::Vector2f(0, 0),
-        sf::Vector2f(0, 10.0f),
+        sf::Vector2f(0, 200.0f),
         50.0f);
   
     const auto particle3_id = particles_.AddParticle(sf::Vector2f(WINDOW_SIZES.x / 4.0f, WINDOW_SIZES.y / 4.0f),
         sf::Vector2f(0, 0),
-        sf::Vector2f(0, 10.0f),
+        sf::Vector2f(0, 200.0f),
         75.0f);
 }
 

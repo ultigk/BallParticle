@@ -4,7 +4,6 @@
 
 
 extern const sf::Vector2u WINDOW_SIZES;
-using ParticleID = size_t; //теперь тип можно не писать
 
 
 Particle::Particle(const sf::Vector2f position, const sf::Vector2f velocity, 
@@ -71,9 +70,7 @@ void Particle::Render(sf::RenderWindow& window)
 }
 
 
-ParticleID ParticleSystem::AddParticle(
-    sf::Vector2f position, sf::Vector2f velocity,
-    sf::Vector2f acceleration, float radius)
+ParticleSystem::ParticleID ParticleSystem::AddParticle(sf::Vector2f position, sf::Vector2f velocity, sf::Vector2f acceleration, float radius)
 {
     Particle new_particle(position, velocity, acceleration, radius);
     particles_.push_back(new_particle);
